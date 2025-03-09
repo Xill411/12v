@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Women's Day Celebration</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+
+    <!-- Page 1: Name Section -->
+    <div id="page1" class="page">
+        <div class="background"></div>
+        <canvas id="shootingStarsCanvas"></canvas>
+        <div class="name-section" id="name-section">
+            <h1>Hello? What's your name?</h1>
+            <input type="text" id="nameInput" placeholder="Enter your name" />
+            <button onclick="goToNextPage()">Enter</button>
+        </div>
+    </div>
+
+    <!-- Page 2: Greeting Section -->
+    <div id="page2" class="page">
+        <div class="background"></div>
+        <div class="greeting-section">
+            <h1>Welcome to the International Women's Day Celebration, <span id="user-name"></span>!</h1>
+            <p>We are glad you're here! Prepare yourself for a joyful and exciting time!</p>
+            <button onclick="goToNextPage2()">Proceed to Invitation</button>
+        </div>
+    </div>
+
+    <!-- Page 3: Invitation Section -->
+    <div id="page3" class="page">
+        <div class="background"></div>
+        <div class="invitation-section">
+            <h1>Happy International Women's Day</h1>
+            <p>Ангийнхаа охидуудад ахлах сургуульдаа тэмдэглэж байгаа сүүлийн эмэгтэйчүүдийн баярын мэндийг ангийн багш болон нийт хөвгүүдийн зүгээс хүргэж байна.</p>
+            <button onclick="goToNextPage3()">Next</button>
+        </div>
+    </div>
+
+    <!-- Page 4: Video Section -->
+    <div id="page4" class="page">
+        <div class="background"></div>
+        <div class="video-section">
+            <h1>Watch this Special Video for Women's Day</h1>
+            <video controls>
+                <source src="your-video-url.mp4" type="video/mp4"> <!-- Replace with actual video URL -->
+                Your browser does not support the video tag.
+            </video>
+            <p class="video-caption">Enjoy this heartfelt video celebrating the strength, beauty, and power of women!</p>
+            <button onclick="goToNextPage4()">Next</button>
+        </div>
+    </div>
+
+    <!-- Page 5: Love You All Section -->
+    <div id="page5" class="page">
+        <div class="background"></div>
+        <canvas id="fireworksCanvas"></canvas>
+        <div class="container">
+            <div class="image-section">
+                <img src="your-image-url.jpg" alt="Special Image"> <!-- Replace with actual image URL -->
+            </div>
+            <p class="caption">Love you all</p>
+            <ul class="name-list">
+                <li>Alice</li>
+                <li>Betty</li>
+                <li>Chloe</li>
+                <li>Daisy</li>
+                <li>Emma</li>
+                <li>Fiona</li>
+                <li>Grace</li>
+                <li>Hannah</li>
+                <li>Isabella</li>
+                <li>Julia</li>
+                <li>Kylie</li>
+                <li>Lily</li>
+                <li>Mia</li>
+                <li>Nina</li>
+                <li>Olivia</li>
+                <li>Sophia</li>
+                <li>Zoe</li>
+            </ul>
+            <button class="celebrate-again-button" onclick="resetExperience()">Celebrate Again</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link to external JavaScript file -->
+</body>
+</html>
